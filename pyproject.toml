@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "try-rust-python"
+version = "0.1.0"
+description = ""
+authors = ["Steven <stevencheung7@outlook.dk>"]
+readme = "README.md"
+packages = [{include = "try_rust_python"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+maturin = "^1.1.0"
+numpy = "^1.25.0"
+pytest = "^7.3.2"
+pandas = "^2.0.2"
+polars = "^0.18.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
