@@ -1,14 +1,21 @@
 use pyo3::prelude::*;
 
-/// Formats the sum of two numbers as string.
-#[pyfunction]
-fn sum_as_string(a: usize, b: usize) -> PyResult<String> {
-    Ok((a + b).to_string())
-}
 
 /// A Python module implemented in Rust.
 #[pymodule]
 fn fun(_py: Python, m: &PyModule) -> PyResult<()> {
-    m.add_function(wrap_pyfunction!(sum_as_string, m)?)?;
+
+    #[pyfn(m)]
+    fn sum_as_string<'py>(a: usize, b: usize) -> String {
+        let result = string_stuff::sum_as_string(a, b);
+        result
+    }
     Ok(())
+}
+
+mod string_stuff {
+
+    pub fn sum_as_string(a: usize, b: usize) -> String {
+        (a + b + b).to_string()
+    }
 }
