@@ -13,8 +13,7 @@ fn fun(_py: Python, m: &PyModule) -> PyResult<()> {
     Ok(())
 }
 
-mod string_stuff {
-
+mod fibonacci {
     pub fn sum_as_string(a: usize, b: usize) -> String {
         (a + b + b).to_string()
     }
