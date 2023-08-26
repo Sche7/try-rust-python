@@ -7,7 +7,7 @@ readme = "README.md"
 packages = [{include = "try_rust_python"}]
 
 [tool.poetry.dependencies]
-python = "^3.9"
+python = "^3.10"
 maturin = "^1.1.0"
 numpy = "^1.25.0"
 pytest = "^7.3.2"
