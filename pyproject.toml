@@ -4,7 +4,7 @@ version = "0.1.0"
 description = ""
 authors = ["Steven <stevencheung7@outlook.dk>"]
 readme = "README.md"
-packages = [{include = "try_rust_python"}]
+packages = [{include = "src"}]
 
 [tool.poetry.dependencies]
 python = "^3.10"
