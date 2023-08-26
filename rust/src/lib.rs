@@ -3,7 +3,7 @@ use pyo3::prelude::*;
 
 /// A Python module implemented in Rust.
 #[pymodule]
-fn try_rust(_py: Python, m: &PyModule) -> PyResult<()> {
+fn rust_module(_py: Python, m: &PyModule) -> PyResult<()> {
 
     #[pyfn(m)]
     fn fibonacci<'py>(n: i64) -> i64 {

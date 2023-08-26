@@ -1,14 +1,20 @@
 import pytest
-from src.fibonacci import fibonacci
+from src.fibonacci import fibonacci as py_fibonacci
+from rust_module import fibonacci as rust_fibonacci
 
-
-@pytest.mark.parametrize("n, expected",[
+fibonacci_sequence = [
     (0, 0),
     (1, 1),
     (9, 34),
     (10, 55),
     (12, 144),
     (14, 377),
-])    
-def test_fibonacci(n, expected):
-    assert fibonacci(n) == expected
+]
+
+@pytest.mark.parametrize("n, expected", fibonacci_sequence)    
+def test_py_fibonacci(n, expected):
+    assert py_fibonacci(n) == expected
+
+@pytest.mark.parametrize("n, expected", fibonacci_sequence)    
+def test_rust_fibonacci(n, expected):
+    assert rust_fibonacci(n) == expected
