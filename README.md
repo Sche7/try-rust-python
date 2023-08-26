@@ -1,7 +1,8 @@
 # Rust and Python
 
-## Introduction
+This repository contains various (sometimes random) functionalities implemented in both Rust and
+Python that I personally use for performance comparisons.
 
 I mainly created this repository to try out Rust and how to use the implemented Rust functionalities in Python.
 Rust can provide a significant performance boost, especially in terms of speed, which makes it an interesting
-solution for optimization of Python-based projects.
+approach when looking into optimizing Python-based projects.
