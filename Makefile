@@ -5,4 +5,4 @@ setup:
 
 # Run tests with pytest
 test:
-	pytest tests/
+	pytest tests/ --durations=0
