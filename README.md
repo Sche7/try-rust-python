@@ -4,9 +4,10 @@ This repository contains various (sometimes random) functionalities implemented 
 Python that I personally use for performance comparisons.
 
 I mainly created this repository to try out Rust and to learn how to use the implemented Rust modules in Python.
-Rust can provide a significant performance boost, especially in terms of speed, which makes it an interesting
-approach when looking into optimizing Python-based projects.
+Rust can provide a significant performance boost, especially in terms of speed, which makes it fairly interesting
+to explore when looking into optimizing Python-based projects.
 
+I will add examples to this repository as I delve more and more into the world of Rust... and also when time permits.
 
 ## How To
 
