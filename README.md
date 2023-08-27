@@ -12,7 +12,7 @@ approach when looking into optimizing Python-based projects.
 
 ### Build Rust Modules
 
-To build the Rust modules for Python to use, run the command from the repository root:
+To build the Rust modules for Python to use, run the following command from the repository root:
 
 ```bash
 make setup
@@ -20,7 +20,7 @@ make setup
 
 ### Run Tests
 
-To run the tests:
+Run all the tests from the repository root with the command:
 
 ```bash
 make test
