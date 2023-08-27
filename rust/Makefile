@@ -1,2 +1,2 @@
 build:
-	maturin build && maturin develop
+	cd fibonacci/ && maturin develop --release

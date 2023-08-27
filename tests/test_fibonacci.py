@@ -1,6 +1,6 @@
 import pytest
 from python.fibonacci import fibonacci as py_fibonacci
-from rust_module import fibonacci as rust_fibonacci
+from fibonacci import rust_fibonacci
 
 fibonacci_sequence = [
     (0, 0),
