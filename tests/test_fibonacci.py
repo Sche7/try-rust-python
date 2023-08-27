@@ -1,5 +1,5 @@
 import pytest
-from src.fibonacci import fibonacci as py_fibonacci
+from python.fibonacci import fibonacci as py_fibonacci
 from rust_module import fibonacci as rust_fibonacci
 
 fibonacci_sequence = [
